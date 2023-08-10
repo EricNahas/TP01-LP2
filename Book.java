@@ -6,18 +6,14 @@ class Book extends Author {
 
 	public Book (String name, Author[] authors, double price) {
 		super("", "", 'm');
-		for (int i = 0; i < authors.length; i++) {
-			this.authors[i] = authors[i];
-		}
+		this.authors = authors;
 		this.name = name;
 		this.price = price;
 	}
 
 	public Book (String name, Author[] authors, double price, int qtd) {
 		super("", "", 'm');
-		for (int i = 0; i < authors.length; i++) {
-			this.authors[i] = authors[i];
-		}
+		this.authors = authors;
 		this.name = name;
 		this.price = price;
 		this.qtd = qtd;
